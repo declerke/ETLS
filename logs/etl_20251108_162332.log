@@ -1,0 +1,17 @@
+2025-11-08 16:23:32,683 - INFO - Pipeline started
+2025-11-08 16:23:32,683 - INFO - PART 1: EXTRACT — Q1–Q10
+2025-11-08 16:23:32,789 - INFO - Loaded main: (211, 68)
+2025-11-08 16:23:32,823 - INFO - Loaded meta: (263, 4)
+2025-11-08 16:23:32,891 - INFO - Loaded pop: (216, 66)
+2025-11-08 16:23:32,899 - INFO - PART 2: CLEAN — Q11–Q19
+2025-11-08 16:23:32,920 - INFO - Q13: Removed 0 duplicates
+2025-11-08 16:23:32,955 - INFO - Q19: Cleaned CSVs saved
+2025-11-08 16:23:32,955 - INFO - PART 3: TRANSFORM — Q21–Q30
+2025-11-08 16:23:32,968 - INFO - Q21: Melted to long format: 13,504 rows
+2025-11-08 16:23:32,986 - INFO - Q22: Merged with population: 13,504 rows
+2025-11-08 16:23:32,996 - INFO - Q23: Added GDP per capita and change
+2025-11-08 16:23:33,001 - INFO - Q25: Added continent
+2025-11-08 16:23:33,004 - INFO - Q26: Sorted by country and year
+2025-11-08 16:23:33,006 - INFO - Q27: Filtered 2010–2020: 2,321 rows
+2025-11-08 16:23:33,010 - INFO - Q29: Rounded numeric columns
+2025-11-08 16:23:33,027 - INFO - Q30: Exported to cleaned\world_bank_cleaned.csv

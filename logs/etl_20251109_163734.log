@@ -1,0 +1,17 @@
+2025-11-09 16:37:34,811 - INFO - Pipeline started
+2025-11-09 16:37:34,811 - INFO - PART 1: EXTRACT — Q1–Q10
+2025-11-09 16:37:34,963 - INFO - Loaded main: (211, 68)
+2025-11-09 16:37:34,986 - INFO - Loaded meta: (263, 4)
+2025-11-09 16:37:35,122 - INFO - Loaded pop: (216, 66)
+2025-11-09 16:37:35,142 - INFO - PART 2: CLEAN — Q11–Q19
+2025-11-09 16:37:35,181 - INFO - Q13: Removed 0 duplicates
+2025-11-09 16:37:35,246 - INFO - Q19: Cleaned CSVs saved
+2025-11-09 16:37:35,246 - INFO - PART 3: TRANSFORM — Q21–Q30
+2025-11-09 16:37:35,354 - INFO - Q30: Exported cleaned\world_bank_cleaned.csv
+2025-11-09 16:37:35,355 - INFO - PART 4: LOAD — Q31–Q40
+2025-11-09 16:37:35,712 - INFO - Q32: Tables created
+2025-11-09 16:37:35,855 - INFO - Q33–Q34: Inserted 2321 rows
+2025-11-09 16:37:35,878 - INFO - Q35: PK added
+2025-11-09 16:37:35,890 - INFO - Q37: Verified counts
+2025-11-09 16:37:35,892 - INFO - Q39: ETL step logged
+2025-11-09 16:37:35,893 - INFO - Q40: Connection closed

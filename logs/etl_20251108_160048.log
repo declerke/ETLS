@@ -1,0 +1,14 @@
+2025-11-08 16:00:48,564 - INFO - Pipeline started
+2025-11-08 16:00:48,564 - INFO - PART 1: EXTRACT — Q1–Q10
+2025-11-08 16:00:48,669 - INFO - Loaded main: (211, 68)
+2025-11-08 16:00:48,680 - INFO - Loaded meta: (263, 4)
+2025-11-08 16:00:48,745 - INFO - Loaded pop: (216, 66)
+2025-11-08 16:00:48,757 - INFO - PART 2: CLEAN — Q11–Q19
+2025-11-08 16:00:48,759 - INFO - Q11: Replaced '..' and empty with NaN
+2025-11-08 16:00:48,774 - INFO - Q12: Converted 64 year columns to float
+2025-11-08 16:00:48,787 - INFO - Q13: Removed 0 duplicates
+2025-11-08 16:00:48,791 - INFO - Q14: Trimmed text
+2025-11-08 16:00:48,792 - INFO - Q15: Standardized country names
+2025-11-08 16:00:48,794 - INFO - Q17: Dropped 0 empty columns
+2025-11-08 16:00:48,794 - INFO - Q18: country_code already present
+2025-11-08 16:00:48,831 - INFO - Q19: Saved cleaned CSVs

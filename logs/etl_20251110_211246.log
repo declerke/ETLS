@@ -1,0 +1,21 @@
+2025-11-10 21:12:47,248 - INFO - Q1–Q3: CSVs loaded
+2025-11-10 21:12:47,276 - INFO - Q4: Dtypes shown
+2025-11-10 21:12:47,296 - INFO - Q5: 211 unique countries
+2025-11-10 21:12:47,313 - INFO - Q6: metadata_country has no indicators
+2025-11-10 21:12:47,336 - INFO - Q7: Missing values checked
+2025-11-10 21:12:47,368 - INFO - Q8: 0 rows missing all values
+2025-11-10 21:12:47,390 - INFO - Q9: 0 invalid country codes
+2025-11-10 21:12:47,419 - INFO - Q10: WIDE format confirmed
+2025-11-10 21:12:47,466 - INFO - Q11–Q12: Values cleaned
+2025-11-10 21:12:47,529 - INFO - Q13: Removed duplicates
+2025-11-10 21:12:47,578 - INFO - Q15–Q17: Standardized
+2025-11-10 21:12:47,602 - INFO - Q18: Codes OK
+2025-11-10 21:12:47,663 - INFO - Q19: Cleaned files saved
+2025-11-10 21:12:47,746 - INFO - Q21–Q22: Merged
+2025-11-10 21:12:47,783 - INFO - Q23: GDP per capita change
+2025-11-10 21:12:47,816 - INFO - Q24: Avg GDP 2020
+2025-11-10 21:12:47,868 - INFO - Q25–Q27: Filtered
+2025-11-10 21:12:47,912 - INFO - Q28–Q29: Summary + round
+2025-11-10 21:12:47,996 - INFO - Q30: Exported cleaned/world_bank_cleaned.csv
+2025-11-10 21:12:48,461 - INFO - Q39: ETL logged
+2025-11-10 21:12:48,462 - INFO - Q40: Done

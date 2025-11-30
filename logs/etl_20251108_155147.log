@@ -1,0 +1,6 @@
+2025-11-08 15:51:47,656 - INFO - Q1–Q3: Loading CSVs...
+2025-11-08 15:51:47,665 - INFO - Loaded main: (211, 68)
+2025-11-08 15:51:47,735 - INFO - Loaded meta: (263, 4)
+2025-11-08 15:51:47,751 - INFO - Loaded pop: (216, 66)
+2025-11-08 15:51:47,798 - INFO - Q4: Showing dtypes
+2025-11-08 15:51:47,805 - INFO - Q5–Q10: Validation
