@@ -1,2 +1,3 @@
-pandas
-psycopg2-binary
+Required Dependencies:  
+- pandas  
+- psycopg2-binary  
