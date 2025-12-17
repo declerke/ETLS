@@ -2,6 +2,8 @@
 
 This repository contains a comprehensive ETL (Extract, Transform, Load) pipeline designed to process World Bank development indicators. The project is structured to handle end-to-end data workflows, from raw data extraction to PostgreSQL database storage, following a structured 40-question technical requirement.
 
+
+
 ## 📂 Repository Structure
 
 The project is organized into a clean directory structure to separate concerns and maintain data integrity:
@@ -29,6 +31,25 @@ Ensure you have Python installed, then install the necessary dependencies:
 pip install -r requirements.txt
 ```
 
+### 2. Database Configuration
+Before running the script, update the `PG_CONFIG` dictionary in `etl.py` with your local PostgreSQL credentials:
+
+```python
+PG_CONFIG = {
+    'host': 'localhost',
+    'user': 'postgres',
+    'password': 'YOUR_PASSWORD',
+    'port': 5432
+}
+```
+
+### 3. Execution
+To run the complete automated pipeline, execute the main script:
+
+```bash
+python etl.py
+```
+
 ## 📊 Pipeline Logic
 
 The system follows a three-stage logic to ensure data quality and relational integrity:
@@ -46,6 +67,8 @@ The system follows a three-stage logic to ensure data quality and relational int
 - Automates the creation of relational tables (`countries` and `facts`) in PostgreSQL.
 - Applies primary and foreign key constraints.
 - Uses optimized bulk insertion for high-performance data loading.
+
+
 
 ## 📝 Logging and Monitoring
 
