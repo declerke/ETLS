@@ -2,8 +2,6 @@
 
 This repository contains a comprehensive ETL (Extract, Transform, Load) pipeline designed to process World Bank development indicators. The project is structured to handle end-to-end data workflows, from raw data extraction to PostgreSQL database storage, following a structured 40-question technical requirement.
 
-
-
 ## 📂 Repository Structure
 
 The project is organized into a clean directory structure to separate concerns and maintain data integrity:
@@ -29,58 +27,32 @@ Ensure you have Python installed, then install the necessary dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
 
-2. Database Configuration
-Before running the script, update the PG_CONFIG dictionary in etl.py with your local PostgreSQL credentials:
+## 📊 Pipeline Logic
 
-Python
-
-PG_CONFIG = {
-    'host': 'localhost',
-    'user': 'postgres',
-    'password': 'YOUR_PASSWORD',
-    'port': 5432
-}
-3. Execution
-To run the complete automated pipeline, execute the main script:
-
-Bash
-
-python etl.py
-📊 Pipeline Logic
 The system follows a three-stage logic to ensure data quality and relational integrity:
 
-Extraction:
+### Extraction
+- Identifies and loads raw CSV files from the `data/` directory.
+- Performs initial checks on metadata and structural consistency.
 
-Identifies and loads raw CSV files from the data/ directory.
+### Transformation
+- **Cleaning:** Renames columns for SQL compatibility and handles null values.
+- **Normalization:** Reshapes data into a star-schema format, separating country-level metadata from time-series economic facts.
+- **Validation:** Ensures data types are cast correctly for database insertion.
 
-Performs initial checks on metadata and structural consistency.
+### Loading
+- Automates the creation of relational tables (`countries` and `facts`) in PostgreSQL.
+- Applies primary and foreign key constraints.
+- Uses optimized bulk insertion for high-performance data loading.
 
-Transformation:
+## 📝 Logging and Monitoring
 
-Cleaning: Renames columns for SQL compatibility and handles null values.
-
-Normalization: Reshapes data into a star-schema format, separating country-level metadata from time-series economic facts.
-
-Validation: Ensures data types are cast correctly for database insertion.
-
-Loading:
-
-Automates the creation of relational tables (countries and facts) in PostgreSQL.
-
-Applies primary and foreign key constraints.
-
-Uses optimized bulk insertion for high-performance data loading.
-
-📝 Logging and Monitoring
-Monitoring is a core feature of the ETLS. Every execution generates a unique log file within the logs/ directory named with the format etl_YYYYMMDD_HHMMSS.log.
+Monitoring is a core feature of the ETLS. Every execution generates a unique log file within the `logs/` directory named with the format `etl_YYYYMMDD_HHMMSS.log`.
 
 The logs track:
-
-Pipeline start and end timestamps.
-
-Number of records successfully extracted and cleaned.
-
-Database connection status and transaction commits.
-
-Detailed error messages for troubleshooting.
+- Pipeline start and end timestamps.
+- Number of records successfully extracted and cleaned.
+- Database connection status and transaction commits.
+- Detailed error messages for troubleshooting.
